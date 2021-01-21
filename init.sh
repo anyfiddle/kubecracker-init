@@ -23,5 +23,4 @@ if [ ! -f $IMAGE_PATH ]; then
     echo "Resizing Image to $IMAGE_DOWNLOAD_URL"
     e2fsck -y -f ${IMAGE_PATH}
     resize2fs $IMAGE_PATH $IMAGE_SIZE
-    ls -lah $IMAGE_FOLDER
 fi
